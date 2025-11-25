@@ -1,0 +1,66 @@
+.alert {
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .alert.success { background-color: #d4edda; color: #155724; }
+        .alert.error { background-color: #f8d7da; color: #721c24; }
+
+        .stock-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .stock-form input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .stock-form button {
+            background: #2575fc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .stock-form button:hover {
+            background: #1a68e8;
+        }
+
+        .stock-display {
+            display: flex;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .stock-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .stock-card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .stock-card .number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2575fc;
+        }

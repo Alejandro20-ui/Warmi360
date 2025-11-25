@@ -1,0 +1,59 @@
+.flujo-container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+    .step {
+        width: 150px;
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        background: #eee;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .step:hover {
+        background: #d5d5d5;
+    }
+    .activo {
+        background: #27AE60;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* MODAL */
+    #modal {
+        display:none;
+        position:fixed;
+        top:0; left:0; width:100%; height:100%;
+        background:rgba(0,0,0,0.65);
+        justify-content:center;
+        align-items:center;
+        z-index:1000;
+    }
+    .modal-box {
+        background:white; 
+        padding:20px; 
+        width:350px; 
+        border-radius:10px;
+        position:relative;
+    }
+    .btn-x {
+        position:absolute;
+        top:10px;
+        right:10px;
+        cursor:pointer;
+        background:#ccc;
+        padding:5px 10px;
+        border-radius:5px;
+    }
+
+    .btn-estado {
+        padding:10px;
+        border-radius:8px;
+        cursor:pointer;
+        border:none;
+        margin-right:10px;
+    }
+    .btn-aprobado { background: #27AE60; color:white; }
+    .btn-negado { background: #C0392B; color:white; }
