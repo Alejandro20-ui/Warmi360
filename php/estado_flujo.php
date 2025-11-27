@@ -43,6 +43,7 @@ $pedidos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <div class="content">
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
 <h1>Flujo de pedidos aprobados</h1>
 
 <?php foreach ($pedidos as $p): ?>
@@ -102,36 +103,11 @@ $pedidos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 </div>
-
-<script>
-function abrirModal(id, estado, descripcionPago){
-
-    document.getElementById("modal").style.display = "flex";
-
-    document.getElementById("modal-titulo").innerText = "Actualizar estado: " + estado;
-    document.getElementById("id_pedido").value = id;
-    document.getElementById("estado").value = estado;
-
-    // Confirmado → mostrar descripción del pago
-    if(estado === "confirmado"){
-        document.getElementById("descripcion_pago").innerHTML =
-            "<strong>Descripción del pago:</strong><br>" + descripcionPago;
-        document.getElementById("botonesAprobacion").style.display = "none";
-    }
-    else {
-        document.getElementById("descripcion_pago").innerHTML = "";
-        document.getElementById("botonesAprobacion").style.display = "block";
-    }
-}
-
-function cerrarModal(){
-    document.getElementById("modal").style.display = "none";
-}
-
-function setAprobado(valor){
-    document.getElementById("aprobado").value = valor;
-}
-</script>
-
+<script src="../js/flujo.js"></script>
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

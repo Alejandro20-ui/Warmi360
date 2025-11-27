@@ -65,6 +65,7 @@ if (!$stock) {
     </div>
 
     <div class="content">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
         <h1>Warmi 360 - Stock de Anillos</h1>
 
         <?= $mensaje ?>
@@ -93,6 +94,10 @@ if (!$stock) {
             </form>
         </div>
     </div>
-
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

@@ -36,9 +36,14 @@ header("Expires: 0");
     </div>
 
     <div class="content">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
         <h1>Warmi 360 - Seccion Ventas</h1>
         <p>Aquí irá el contenido de la página.</p>
     </div>
-
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

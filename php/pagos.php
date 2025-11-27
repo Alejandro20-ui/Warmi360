@@ -36,6 +36,7 @@ require __DIR__ . '/../backend/conexion.php';
 </div>
 
 <div class="content">
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
     <h1>Lista de Pedidos</h1>
 
     <table border="1" cellpadding="10">
@@ -71,6 +72,10 @@ require __DIR__ . '/../backend/conexion.php';
         ?>
     </table>
 </div>
-
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
-$host = $_ENV['DB_HOST'] ?? 'localhost';
-$port = $_ENV['DB_PORT'] ?? '3306';
-$database = $_ENV['DB_NAME'] ?? 'test';
+$host = $_ENV['DB_HOST'] ?? 'maglev.proxy.rlwy.net';
+$port = $_ENV['DB_PORT'] ?? '50204';
+$database = $_ENV['DB_NAME'] ?? 'alertamujer';
 $user = $_ENV['DB_USER'] ?? 'root';
-$password = $_ENV['DB_PASS'] ?? '';
+$password = $_ENV['DB_PASS'] ?? 'CZhVEBZHQRoZvxHsUoPlOrWgSTXnacGc';
 
 try {
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$database;charset=utf8mb4", $user, $password, [
