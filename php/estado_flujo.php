@@ -33,14 +33,19 @@ $pedidos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 
-<div class="sidebar">
-    <div class="sidebar-title">MENÚ</div>
-    <a href="estado_flujo.php">Flujo de Pedidos</a>
-    <a href="pagos.php">Pagos</a>
-    <a href="stock.php">Stock</a>
-    <a href="proveedor.php">Proveedor</a>
-    <div class="logout"><a href="logout.php">Cerrar Sesión</a></div>
-</div>
+    <div class="sidebar">
+        <div class="sidebar-title">MENÚ</div>
+        
+        <div class="sidebar-nav">
+            <a href="estado_flujo.php">Estados de Pedidos</a>
+            <a href="pagos.php">Pagos</a>
+            <a href="stock.php">Stock</a>
+            <a href="proveedor.php">Proveedor</a>
+        </div>
+        <div class="logout">
+            <a href="logout.php">Cerrar Sesión</a>
+        </div>
+    </div>
 
 <div class="content">
     <button class="menu-toggle" onclick="toggleSidebar()">☰</button>

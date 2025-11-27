@@ -32,8 +32,9 @@ body {
     top: 0;
     transition: transform 0.3s ease;
     z-index: 1000;
+    display: flex;
+    flex-direction: column; /* 👈 clave */
 }
-
 /* Título del menú */
 .sidebar-title {
     color: #ecf0f1;
@@ -41,6 +42,11 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: bold;
+}
+.sidebar-nav {
+    flex: 1;
+    overflow-y: auto; /* permite scroll si hay muchos enlaces */
+    padding-bottom: 20px; /* espacio antes del logout */
 }
 
 /* Enlaces del menú */
@@ -58,9 +64,10 @@ body {
 
 /* Cerrar sesión (abajo del menú) */
 .logout {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+    margin-top: auto; /* 👈 empuja el logout al final */
+    padding: 0 20px 20px; /* ajusta el padding interno */
+    width: auto; /* ancho automático, no 100% */
+    text-align: center;
 }
 
 /* Contenido principal */

@@ -57,3 +57,34 @@
     }
     .btn-aprobado { background: #27AE60; color:white; }
     .btn-negado { background: #C0392B; color:white; }
+    @media (max-width: 767px) {
+    .flujo-container {
+        flex-direction: column; /* Apilar los pasos en columna */
+        align-items: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .step {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 300px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    .modal-box {
+        width: 90%; /* Más ancho relativo en móvil */
+        padding: 18px;
+    }
+
+    .btn-estado {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    /* Si hay dos botones, apilarlos */
+    .modal-box .btns-group {
+        display: flex;
+        flex-direction: column;
+    }
+}

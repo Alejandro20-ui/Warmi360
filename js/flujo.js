@@ -5,8 +5,6 @@ function abrirModal(id, estado, descripcionPago){
     document.getElementById("modal-titulo").innerText = "Actualizar estado: " + estado;
     document.getElementById("id_pedido").value = id;
     document.getElementById("estado").value = estado;
-
-    // Confirmado → mostrar descripción del pago
     if(estado === "confirmado"){
         document.getElementById("descripcion_pago").innerHTML =
             "<strong>Descripción del pago:</strong><br>" + descripcionPago;
