@@ -92,7 +92,7 @@ body {
     .sidebar-nav {
         flex: 1;
         overflow-y: auto;
-        padding-bottom: 60px; /* 👈 AJUSTA ESTE VALOR — empieza con 60 */
+        padding-bottom: 30px; /* 👈 AJUSTA ESTE VALOR — empieza con 60 */
     }
 
     .sidebar.active {
