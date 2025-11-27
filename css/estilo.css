@@ -86,7 +86,13 @@ body {
     }
 
     .sidebar {
-        transform: translateX(-100%); /* Oculto por defecto */
+        transform: translateX(-100%);
+        width: 260px; /* opcional: un poco más ancho para mejor legibilidad */
+    }
+    .sidebar-nav {
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 60px; /* 👈 AJUSTA ESTE VALOR — empieza con 60 */
     }
 
     .sidebar.active {
