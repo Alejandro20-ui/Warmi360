@@ -45,8 +45,8 @@ body {
 }
 .sidebar-nav {
     flex: 1;
-    overflow-y: auto; /* permite scroll si hay muchos enlaces */
-    padding-bottom: 20px; /* espacio antes del logout */
+    overflow-y: auto;
+    padding-bottom: 60px; /* 👈 AUMENTADO PARA DEJAR ESPACIO AL LOGOUT */
 }
 
 /* Enlaces del menú */
@@ -62,11 +62,9 @@ body {
     background-color: #34495e;
 }
 
-/* Cerrar sesión (abajo del menú) */
 .logout {
-    margin-top: auto; /* 👈 empuja el logout al final */
-    padding: 0 20px 20px; /* ajusta el padding interno */
-    width: auto; /* ancho automático, no 100% */
+    margin-top: auto;
+    padding: 0 20px 20px;
     text-align: center;
 }
 
